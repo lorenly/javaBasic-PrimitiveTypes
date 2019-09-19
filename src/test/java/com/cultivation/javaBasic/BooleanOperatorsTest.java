@@ -10,25 +10,40 @@ class BooleanOperatorsTest {
     @Test
     void should_perform_logical_boolean_operations() {
         boolean[] actualResults = {
-                true && true,
-                true && false,
-                false && false,
-                true || true,
-                true || false,
-                false || false,
-                true & true,
-                true & false,
-                false & false,
-                true | true,
-                true | false,
-                false | false,
-                3 == 7,
-                4 != 5
+                true && true, //true
+                true && false, //false
+                false && false, //false
+                true || true, //true
+                true || false, //true
+                false || false, //false
+                true & true, // true
+                true & false, //false
+                false & false, //false
+                true | true, //true
+                true | false, //true
+                false | false, //false
+                3 == 7, //false
+                4 != 5 //true
         };
 
         // TODO: please modify the following code to pass the test
         // <--start
-        boolean[] expectedResult = {};
+        boolean[] expectedResult = {
+                true,
+                false,
+                false,
+                true,
+                true,
+                false,
+                true,
+                false,
+                false,
+                true,
+                true,
+                false,
+                false,
+                true,
+        };
         // --end-->
 
         assertArrayEquals(expectedResult, actualResults);
@@ -38,10 +53,10 @@ class BooleanOperatorsTest {
     void should_do_bitwise_and_boolean_operation() {
         final int value = 0x1234_abcd;
         final int mask = 0x000f_ff00;
-
+        System.out.print(0xAA);
         // TODO: please write down the result directly to pass the test.
         // <--start
-        final int expected = 0;
+        final int expected = 0x0004_ab00;
         // --end-->
 
         assertEquals(expected, value & mask);
@@ -54,7 +69,7 @@ class BooleanOperatorsTest {
 
         // TODO: please write down the result directly to pass the test.
         // <--start
-        final int expected = 0;
+        final int expected = 0x1234_abcd;
         // --end-->
 
         assertEquals(expected, value | mask);
@@ -66,7 +81,7 @@ class BooleanOperatorsTest {
 
         // TODO: please write down the result directly to pass the test.
         // <--start
-        final int expected = 0;
+        final int expected = 0xffff_0000;
         // --end-->
 
         assertEquals(expected, ~value);
