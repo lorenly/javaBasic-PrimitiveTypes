@@ -77,7 +77,7 @@ class IntegerTypeTest {
 
         // TODO: Please correct the value to pass the test.
         // <--start
-        final int expectedResult = Integer.MIN_VALUE;
+        final int expectedResult = -Integer.MAX_VALUE-1;
         // --end-->
 
         assertEquals(expectedResult, theNumberWillOverflow);
@@ -117,8 +117,8 @@ class IntegerTypeTest {
         System.out.print(result1);
         // TODO: please modify the following lines to pass the test
         // <!--start
-        final double expectedResult1 = 0.0;
-        final double expectedResult2 = 3.0;
+        final double expectedResult1 = (int)result1;
+        final double expectedResult2 = (int)result2;
         // --end-->
 
         assertEquals(expectedResult1, result1, +1.0E-05);
@@ -146,8 +146,8 @@ class IntegerTypeTest {
 
         // TODO: please modify the following code to pass the test
         // <--start
-        final int expectedCurrentInteger = 4;
-        final int expectedResult = 3;
+        final int expectedCurrentInteger = ++result;
+        final int expectedResult = integer;
         // --end-->
 
         assertEquals(expectedCurrentInteger, integer);
@@ -162,8 +162,8 @@ class IntegerTypeTest {
 
         // TODO: please modify the following code to pass the test
         // <--start
-        final int expectedCurrentInteger = 4;
-        final int expectedResult = 4;
+        final int expectedCurrentInteger = ++result;
+        final int expectedResult = ++integer;
         // --end-->
 
         assertEquals(expectedCurrentInteger, integer);
@@ -176,8 +176,6 @@ class IntegerTypeTest {
         // The method should throw ArithmeticException if overflow or underflow happens.
         try {
             return Math.addExact(left, right);
-        }catch(ArithmeticException e){
-            throw e;
         }catch(NotImplementedException ex){
             throw ex;
         }

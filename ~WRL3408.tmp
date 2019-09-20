@@ -32,11 +32,10 @@ FloatingTypeTest
 	* Check if numbers are real numbers or not
 2. Why the test failed at first?
 	* The initialized variables are having the MAX Integer value
-	* No throw exception overflow and underflow values
+	* No throw exception for non-real numbers
 3. Why you corrected the test that way?
 	* I used short for narrowing casting.
 	* Math.Round() for rounding off
-	* Math.addExact() for ArithmethicException
 	* Throw exception error for non-real numbers.
 4. Do you have further questions on this knowledge point?
 	* None
@@ -52,8 +51,7 @@ IntegerTypeTest
 3. Why you corrected the test that way?
 	* I initialized the expected values to Max and Min value for each data type.
 	* Computed manually and initialized constant values
-	* addExact method for overflowing and underflowing values.
-	* Throw NotImplementedException
+	* Throw exception for ArithmeticException and NotImplementedException
 4. Do you have further questions on this knowledge point?
 	* None
 
