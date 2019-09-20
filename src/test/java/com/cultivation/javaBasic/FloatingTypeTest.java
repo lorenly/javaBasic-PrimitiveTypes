@@ -17,7 +17,7 @@ class FloatingTypeTest {
 
         // TODO: Please change the result to pass the test.
         // <!--start
-        final int expected = (int)Math.floor(floatingPointNumber);
+        final int expected = (short)floatingPointNumber;
         // --end-->
 
         assertEquals(expected, integer);
@@ -43,7 +43,7 @@ class FloatingTypeTest {
 
         // TODO: Please change the result to pass the test.
         // <!--start
-        final int expected = (int)Math.floor(floatingPointNumber);
+        final int expected = (short)floatingPointNumber;
         // --end-->
 
         assertEquals(expected, integer);

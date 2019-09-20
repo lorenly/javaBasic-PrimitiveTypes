@@ -34,11 +34,11 @@ FloatingTypeTest
 	* The initialized variables are having the MAX Integer value
 	* No throw exception for non-real numbers
 3. Why you corrected the test that way?
-	* I used Math.Floor() for not rounding off
+	* I used short for narrowing casting.
 	* Math.Round() for rounding off
 	* Throw exception error for non-real numbers.
 4. Do you have further questions on this knowledge point?
-	* No.
+	* None
 
 
 IntegerTypeTest
