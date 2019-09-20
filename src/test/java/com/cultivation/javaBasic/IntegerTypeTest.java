@@ -114,11 +114,11 @@ class IntegerTypeTest {
     void should_take_care_of_number_type_when_doing_calculation() {
         final double result1 = 2 / 3 * 5;
         final double result2 = 2 * 5 / 3;
-
+        System.out.print(result1);
         // TODO: please modify the following lines to pass the test
         // <!--start
-        final double expectedResult1 = Double.valueOf(result1);
-        final double expectedResult2 = Double.valueOf(result2);
+        final double expectedResult1 = 0.0;
+        final double expectedResult2 = 3.0;
         // --end-->
 
         assertEquals(expectedResult1, result1, +1.0E-05);
@@ -132,7 +132,7 @@ class IntegerTypeTest {
 
         // TODO: please modify the following lines to pass the test
         // <!--start
-        final short expected = (short)integer;
+        final short expected = 0x4567;
         // --end-->
 
         assertEquals(expected, smallerInteger);
@@ -146,8 +146,8 @@ class IntegerTypeTest {
 
         // TODO: please modify the following code to pass the test
         // <--start
-        final int expectedCurrentInteger = integer;
-        final int expectedResult = --result;
+        final int expectedCurrentInteger = 4;
+        final int expectedResult = 3;
         // --end-->
 
         assertEquals(expectedCurrentInteger, integer);
@@ -162,8 +162,8 @@ class IntegerTypeTest {
 
         // TODO: please modify the following code to pass the test
         // <--start
-        final int expectedCurrentInteger = integer;
-        final int expectedResult = ++result;
+        final int expectedCurrentInteger = 4;
+        final int expectedResult = 4;
         // --end-->
 
         assertEquals(expectedCurrentInteger, integer);
