@@ -26,7 +26,7 @@ CharTypeTest
 
 FloatingTypeTest
 1. What is the knowledge point of the test? Where is the official document to the knowledge point?
-	* Official Document: https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
+	* Official Document: https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html, https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html 
 	* Learning data type conversion
 	* Rounding off numbers
 	* Check if numbers are real numbers or not
