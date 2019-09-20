@@ -26,7 +26,7 @@ CharTypeTest
 
 FloatingTypeTest
 1. What is the knowledge point of the test? Where is the official document to the knowledge point?
-	* Official Document: https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html, https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html 
+	* Official Document: https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html 
 	* Learning data type conversion
 	* Rounding off numbers
 	* Check if numbers are real numbers or not
@@ -44,7 +44,7 @@ FloatingTypeTest
 
 IntegerTypeTest
 1. What is the knowledge point of the test? Where is the official document to the knowledge point?
-	* Official Document: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+	* Official Document: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html, https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html 
 	* Learning Primitive data types.
 	* Maximum and Minimum values for each data types
 2. Why the test failed at first?
