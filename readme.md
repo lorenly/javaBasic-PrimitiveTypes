@@ -50,8 +50,7 @@ IntegerTypeTest
 2. Why the test failed at first?
 	* The expected values are incorrect
 3. Why you corrected the test that way?
-	* I initialized the expected values to Max and Min value for each data type.
-	* Computed manually and initialized constant values
+	* I initialized the expected values to Max and Min value for each data type. 
 	* addExact method for overflowing and underflowing values.
 	* Throw NotImplementedException
 4. Do you have further questions on this knowledge point?
