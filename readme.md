@@ -1,4 +1,4 @@
-BooleanOperatorsTest.
+BooleanOperatorsTest
 	1. What is the knowledge point of the test? Where is the official document to the knowledge point?
 		* Official Document: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
 		* Reading and answering the expected output of the code without running.
